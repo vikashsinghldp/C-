@@ -1,0 +1,49 @@
+function overload -function with same name but different parameters
+operator overload -
+function override -If derived class defines same function as defined in its base class, it is known as function overriding in C++
+A C++ virtual function is a member function in the base class that you redefine in a derived class. It is declared using the virtual keyword.
+Abstraction in C++ is the process to hide the internal details and showing functionality only.
+Data Abstraction is a process of providing only the essential details to the outside world and hiding the internal details, i.e., representing only the essential details in the program.
+If a function is defined as a friend function in C++, then the protected and private data of a class can be accessed using the function
+Enum in C++ is a data type that contains fixed set of constants.
+C++	1980	Bjarne Stroustrup
+Methods are functions that belongs to the class.
+A constructor in C++ is a special method that is automatically called when an object of a class is created.
+public - members are accessible from outside the class
+private - members cannot be accessed (or viewed) from outside the class
+protected - members cannot be accessed from outside the class, however, they can be accessed in inherited classes. 
+The meaning of Encapsulation, is to make sure that "sensitive" data is hidden from users. To achieve this, you must declare class variables/attributes as private (cannot be accessed from outside the class). 
+In C++, it is possible to inherit attributes and methods from one class to another. We group the "inheritance concept" into two categories:
+
+derived class (child) - the class that inherits from another class
+base class (parent) - the class being inherited from
+To inherit from a class, use the : symbol.
+Polymorphism means "many forms", and it occurs when we have many classes that are related to each other by inheritance.
+
+Like we specified in the previous chapter; Inheritance lets us inherit attributes and methods from another class. Polymorphism uses those methods to perform different tasks. This allows us to perform a single action in different ways.
+// Create a Car class with some attributes
+class Car {
+  public:
+    string brand;   
+    string model;
+    int year;
+};
+
+int main() {
+  // Create an object of Car
+  Car carObj1;
+  carObj1.brand = "BMW";
+  carObj1.model = "X5";
+  carObj1.year = 1999;
+
+  // Create another object of Car
+  Car carObj2;
+  carObj2.brand = "Ford";
+  carObj2.model = "Mustang";
+  carObj2.year = 1969;
+
+  // Print attribute values
+  cout << carObj1.brand << " " << carObj1.model << " " << carObj1.year << "\n";
+  cout << carObj2.brand << " " << carObj2.model << " " << carObj2.year << "\n";
+  return 0;
+}
